@@ -6,3 +6,7 @@ def Home(request):
     
 def show_task(request):
     return HttpResponse("this is show")
+def show_specific_task(request,id):
+    print("id",id)
+    print("id type",type(id))
+    return HttpResponse(f"this is specific task {id}")
